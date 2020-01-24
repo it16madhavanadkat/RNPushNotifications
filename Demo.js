@@ -76,7 +76,7 @@ export default class CustomText extends React.Component {
     render() {
         const {...props} = this.props;
         return (
-            <Text  {...props} style={this.props.style}>
+            <Text  {...props} style={[this.props.style,{padding:10}]}>
                 {this.state.test}
             </Text>
         );
